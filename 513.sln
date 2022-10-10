@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nobel", "Nobel\Nobel.csproj", "{64776260-663F-496D-A42D-41879F2585EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vasmegye", "Vasmegye\Vasmegye.csproj", "{A166F15A-B881-419C-8F39-55BF0AB268B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64776260-663F-496D-A42D-41879F2585EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64776260-663F-496D-A42D-41879F2585EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64776260-663F-496D-A42D-41879F2585EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64776260-663F-496D-A42D-41879F2585EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A166F15A-B881-419C-8F39-55BF0AB268B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A166F15A-B881-419C-8F39-55BF0AB268B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A166F15A-B881-419C-8F39-55BF0AB268B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A166F15A-B881-419C-8F39-55BF0AB268B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {722C1DAB-71F4-43AB-BAB9-E4D8BE57148C}
+	EndGlobalSection
+EndGlobal
