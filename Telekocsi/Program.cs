@@ -20,13 +20,45 @@ namespace Telekocsi
             feladat03();
             feladat04();
             feladat05();
+            feladat06();
             Console.WriteLine("\nProgram vége!");
             Console.ReadLine();
         }
 
+        private static void feladat06()
+        {
+            Console.WriteLine("\n6. feladat");
+            Console.WriteLine("\tutasuzenetek.txt létrehozása ...");
+            using (StreamWriter sw = new StreamWriter("utasuzenetek.txt"))
+            {
+                foreach (Igeny igeny in igenyek)
+                {
+                    var talalat = autok.Find(a => igeny.Indulas.Equals(a.Indulas) && igeny.Cel.Equals(a.Cel) && igeny.Szemelyek <= a.Ferohely);
+                    if (talalat != null)
+                    {
+                        sw.WriteLine($"{igeny.Azonosito}: Rendszám: {talalat.Rendszam}, Telefonszám: {talalat.Telefonszam}");
+                    }
+                    else
+                    {
+                        sw.WriteLine($"{igeny.Azonosito}: Sajnos nem sikerült autót találni!");
+                    }
+                }
+            }
+            
+ 
+        }
+
         private static void feladat05()
         {
-            Console.WriteLine("5. feladat");
+            Console.WriteLine("\n5. feladat");
+            foreach (Igeny igeny in igenyek)
+            {
+                var talalat = autok.Find(a => igeny.Indulas.Equals(a.Indulas) && igeny.Cel.Equals(a.Cel) && igeny.Szemelyek <= a.Ferohely);
+                if (talalat!=null)
+                {
+                    Console.WriteLine($"\t{igeny.Azonosito} => {talalat.Rendszam}");
+                }
+            }
 
         }
 
@@ -35,7 +67,7 @@ namespace Telekocsi
             //-- Határozza meg és írja ki, hogy melyik volt
             //   az az útvonal (induló- és célállomás),
             //   amelyhez a legtöbb férőhelyet ajánlották fel a hirdetők!
-            Console.WriteLine("4. feladat");
+            Console.WriteLine("\n4. feladat");
             var utak = autok.GroupBy(a => new { a.Indulas, a.Cel }).Select(b => new { ut = b.Key, fo = b.Sum(c => c.Ferohely) }).OrderByDescending(d => d.fo).FirstOrDefault();
             Console.WriteLine($"A legtöbb férőhelyet ({utak.fo}-et) a {utak.ut.Indulas} - {utak.ut.Cel} útvonalon ajánlották fel a hirdetők");
         }
@@ -44,7 +76,7 @@ namespace Telekocsi
         {
             //-- Határozza meg és írja ki a képernyőre,
             //hogy Budapestről Miskolcra összesen hány férőhelyet hirdettek a sofőrök!
-            Console.WriteLine("3. feladat");
+            Console.WriteLine("\n3. feladat");
             int db = autok.FindAll(a => a.Indulas.Equals("Budapest")&& a.Cel.Equals("Miskolc")).Count();
             Console.WriteLine($"\tÖsszesen {db} férőhelyet hirdettek az autósok Budapestről Miskolcra");
 
@@ -52,7 +84,7 @@ namespace Telekocsi
 
         private static void feladat02()
         {
-            Console.WriteLine("2. feladat");
+            Console.WriteLine("\n2. feladat");
             Console.WriteLine($"\t{autok.Select(a => a.Rendszam).ToList().Distinct().Count()} autós hirdetett fuvart");
         }
 
