@@ -45,6 +45,16 @@ namespace Jackie_Stewart
             this.fastests = int.Parse(sor[5]);
         }
 
-    
+        public int Year => year;
+
+        public int Races => races;
+
+        public int Wins => wins;
+
+        public int Podiums => podiums;
+
+        public int Poles => poles;
+
+        public int Fastests => fastests;
     }
 }
