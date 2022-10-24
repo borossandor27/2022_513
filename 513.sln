@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vasmegye", "Vasmegye\Vasmeg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telekocsi", "Telekocsi\Telekocsi.csproj", "{B6F3DA49-755B-4AAF-8516-1333966021A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sikidomok", "Sikidomok\Sikidomok.csproj", "{9792A600-1264-408F-8481-BAD8613E01DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAdatbazis", "ConsoleAdatbazis\ConsoleAdatbazis.csproj", "{57D68265-62B0-427D-9530-827AB7BBF840}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{B6F3DA49-755B-4AAF-8516-1333966021A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F3DA49-755B-4AAF-8516-1333966021A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F3DA49-755B-4AAF-8516-1333966021A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9792A600-1264-408F-8481-BAD8613E01DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9792A600-1264-408F-8481-BAD8613E01DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9792A600-1264-408F-8481-BAD8613E01DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9792A600-1264-408F-8481-BAD8613E01DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D68265-62B0-427D-9530-827AB7BBF840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D68265-62B0-427D-9530-827AB7BBF840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D68265-62B0-427D-9530-827AB7BBF840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D68265-62B0-427D-9530-827AB7BBF840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
