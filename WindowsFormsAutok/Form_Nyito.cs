@@ -176,5 +176,31 @@ namespace WindowsFormsAutok2
                 conn.Close();
             }
         }
+
+        private void button_Delete_Click(object sender, EventArgs e)
+        {
+            if (listBox_Autok.SelectedIndex < 0)
+            {
+                return;
+            }
+            cmd.CommandText = "DELETE FROM `autok` WHERE `id`= @id";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@id", textBox_Id.Text);
+            conn.Open();
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Törlés sikeres!");
+                conn.Close();
+                textBox_Id.Text = "";
+                textBox_Rendszam.Text = "";
+                textBox_Szin.Text = "";
+                numericUpDown_Evjarat.Value = numericUpDown_Evjarat.Minimum;
+                Autok_lista_update();
+            }
+            else
+            {
+                MessageBox.Show("A törlés sikertelen!");
+            }
+        }
     }
 }
