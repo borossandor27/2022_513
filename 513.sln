@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAutok", "Window
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDataClass", "WindowsFormsDataClass\WindowsFormsDataClass.csproj", "{2122DF6A-7379-475C-9600-A09B76D6CEA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp_DataGridView", "WindowsFormsApp_DataGridView\WindowsFormsApp_DataGridView.csproj", "{87136250-C5D5-4862-B180-4959E993950E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{2122DF6A-7379-475C-9600-A09B76D6CEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2122DF6A-7379-475C-9600-A09B76D6CEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2122DF6A-7379-475C-9600-A09B76D6CEA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87136250-C5D5-4862-B180-4959E993950E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87136250-C5D5-4862-B180-4959E993950E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87136250-C5D5-4862-B180-4959E993950E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87136250-C5D5-4862-B180-4959E993950E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
